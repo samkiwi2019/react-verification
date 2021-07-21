@@ -28,4 +28,4 @@
 
 ## Notes
 
-In order to save the resources of the virtual machine, the project has been packaged in the development environment, and only the static files will be deployed in the virtual machine. Therefore, the ‘dist’ directory in the project can be deleted directly
+In order to save the resources of the virtual machine, the project has been packaged in the development environment, and only the static files will be deployed in the virtual machine. Therefore, the `/build` directory can be deleted directly.
