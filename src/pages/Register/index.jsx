@@ -150,7 +150,6 @@ function RegisterPage() {
                                 label='phone'
                                 name='phone'
                                 autoComplete='phone'
-                                autoFocus
                                 value={form.phone}
                                 onChange={e => handleInput(e, 'phone')}
                                 validators={['required']}
