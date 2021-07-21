@@ -1,0 +1,2 @@
+(this["webpackJsonpreact-verification"]=this["webpackJsonpreact-verification"]||[]).push([[4],{194:function(e,t,c){"use strict";c.r(t);c(0);var i=c(3),n=c(4);t.default=Object(i.g)((function(e){return Object(n.jsx)("div",{children:Object(n.jsx)("h4",{children:" Home 1234"})})}))}}]);
+//# sourceMappingURL=4.6f0edaa6.chunk.js.map
