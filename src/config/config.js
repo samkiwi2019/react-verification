@@ -1,11 +1,9 @@
 const config = {
-    defaults: {
-        namespace: 'Application',
-    },
     baseUrl: {
-        dev: 'https://localhost:5001/',
-        pro: 'https://vc.keenneed.com/',
+        dev: 'http://localhost:5000',
+        pro: 'https://vc.keenneed.com',
     },
+    maxSnackbar: 7,
 };
 
 export default config;

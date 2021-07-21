@@ -1,8 +1,6 @@
 import React, { Suspense } from 'react';
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import routes from './config/routes';
-import { Provider } from 'react-redux';
-import store from './store';
 import Layout from './layout';
 
 const getRoutes = () =>
@@ -19,18 +17,16 @@ const getRoutes = () =>
 
 const Application = props => {
     return (
-        <Provider store={store}>
-            <BrowserRouter>
-                <Suspense fallback={<div>Loading...</div>}>
-                    <Switch>
-                        <Layout name='layout'>
-                            <Redirect from='/' to='/register' />
-                            {getRoutes()}
-                        </Layout>
-                    </Switch>
-                </Suspense>
-            </BrowserRouter>
-        </Provider>
+        <BrowserRouter>
+            <Suspense fallback={<div>Loading...</div>}>
+                <Switch>
+                    <Layout name='layout'>
+                        <Redirect from='/' to='/register' />
+                        {getRoutes()}
+                    </Layout>
+                </Switch>
+            </Suspense>
+        </BrowserRouter>
     );
 };
 

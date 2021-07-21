@@ -5,7 +5,7 @@ import axios from './api.request';
  * */
 export const getVerificationCodeByEmail = email => {
     return axios.request({
-        url: '/getVerificationCodeByEmail',
+        url: '/api/getVerificationCodeByEmail',
         data: { email },
         method: 'post',
     });
@@ -13,7 +13,7 @@ export const getVerificationCodeByEmail = email => {
 
 export const createCustomerByEmail = ({ fullName, phone, email, vCode }) => {
     return axios.request({
-        url: '/createCustomerByEmail',
+        url: '/api/createCustomerByEmail',
         data: { fullName, phone, email, vCode },
         method: 'post',
     });

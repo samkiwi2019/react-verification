@@ -1,7 +1,7 @@
 import { lazy } from 'react';
 
-const HomePage = lazy(() => import('../views/Home'));
-const Register = lazy(() => import('../views/Register'));
+const HomePage = lazy(() => import('../pages/Home'));
+const Register = lazy(() => import('../pages/Register'));
 
 const routes = [
     {
